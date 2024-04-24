@@ -43,3 +43,20 @@ header {
 .icon:hover {
     filter: hue-rotate(60deg);
 }
+.div_img{
+    width: 100%;
+    height: 300px;
+    background-image: url(img/Rectangle.png);
+}
+.div_img img{
+    margin-top: 10%;
+    margin-left: 40%;
+}
+.div_img .imger{
+    margin-top: .5%;
+    margin-left: 46%;
+}
+.div_img .imge{
+    margin-top: -.5%;
+    margin-left: 45%;
+}
