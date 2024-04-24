@@ -11,23 +11,24 @@ fetch('data.json')
 
 function loadProducts() {
     var table = document.getElementById('productTable');
-    table.innerHTML = ""; 
 
-    for (var i = 0; i < productIndex; i++) {
-        var row = `<tr>
-                        <td><img src="${products[i].img}" alt="" class="sofa"> ${products[i].name}</td>
-                        <td>${products[i].price}</td>
-                        <td>${products[i].quantity}</td>
-                        <td>${products[i].price}</td>
-                   </tr>`
-        table.innerHTML += row;
+    if (productIndex === 0) {
+        table.innerHTML += ""; 
     }
+
+    var row = `<tr>
+                    <td><img src="${products[productIndex].img}" alt="" class="sofa"> ${products[productIndex].name}</td>
+                    <td>${products[productIndex].price}</td>
+                    <td>${products[productIndex].quantity}</td>
+                    <td>${products[productIndex].price}</td>
+               </tr>`
+    table.innerHTML += row;
 }
 
 function addProduct() {
     if (productIndex < products.length) {
-        productIndex++;
         loadProducts(); 
+        productIndex++;
     } else {
         alert("No more products to add.");
     }
