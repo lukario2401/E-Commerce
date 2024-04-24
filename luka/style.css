@@ -1,12 +1,12 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #ffffff;
+    color: #000000;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -14,24 +14,32 @@ header {
 }
 
 .logo {
-    width: 100px; 
+    width: 100px;
 }
 
 .labels {
     flex-grow: 1;
+    margin-left: 150px;
     text-align: center;
 }
 
 .label {
     display: inline-block;
-    margin: 0 10px;
+    font-weight: bold;
+    margin: 0 30px;
 }
 
 .icons {
+    margin-right: 20px;
     display: flex;
 }
 
 .icon {
-    width: 30px; 
-    margin-left: 10px; 
+    width: auto; 
+    height: auto;
+    margin-left: 30px; 
+}
+
+.icon:hover {
+    filter: hue-rotate(60deg);
 }
