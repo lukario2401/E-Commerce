@@ -1,23 +1,15 @@
-// main working file
+var products = [
+    {
+        "name": "Algarotti sofa",
+        "img": "img/sofa.png",
+        "price": "Rs 250,000.00",
+        "quantity": 1
+    },
+];
 
-window.onload = function() {
-    var products = [
-        {
-            "name": "Algarotti sofa",
-            "img": "img/sofa.png",
-            "price": "Rs 250,000.00",
-            "quantity": 1
-        },
-        {
-            "name": "black sofa",
-            "img": "img/sofa.png",
-            "price": "Rs 150,000.00",
-            "quantity": 2
-        }
-
-    ];
-
+function loadProducts() {
     var table = document.getElementById('productTable');
+    table.innerHTML = ""; 
 
     for (var i = 0; i < products.length; i++) {
         var row = `<tr>
@@ -29,3 +21,21 @@ window.onload = function() {
         table.innerHTML += row;
     }
 }
+
+function addProduct() {
+    var name = prompt("Enter product name:");
+    var img = prompt("Enter image URL:");
+    var price = prompt("Enter product price:");
+    var quantity = prompt("Enter product quantity:");
+
+    products.push({
+        "name": name,
+        "img": img,
+        "price": price,
+        "quantity": parseInt(quantity)
+    });
+
+    loadProducts(); 
+}
+
+window.onload = loadProducts;
