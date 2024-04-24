@@ -1,20 +1,13 @@
-var products = [
-    {
-        "name": "Algarotti sofa",
-        "img": "img/sofa.png",
-        "price": "Rs 250,000.00",
-        "quantity": 1
-    },
-    {
-        "name": "black sofa",
-        "img": "img/sofa.png",
-        "price": "Rs 150,000.00",
-        "quantity": 1
-    }
-    
-];
-
+var products = [];
 var productIndex = 0;
+
+fetch('data.json')
+    .then(response => response.json())
+    .then(data => {
+        products = data;
+        loadProducts(); 
+    })
+    .catch(error => console.error('Error:', error));
 
 function loadProducts() {
     var table = document.getElementById('productTable');
@@ -39,5 +32,3 @@ function addProduct() {
         alert("No more products to add.");
     }
 }
-
-window.onload = loadProducts;
