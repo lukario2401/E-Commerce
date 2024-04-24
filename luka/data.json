@@ -1,9 +1,9 @@
 [
     {
-        "name": "Algarotti sofa",
+        "name": "cat sofa",
         "img": "img/sofa.png",
-        "price": "Rs 250,000.00",
-        "quantity": 10
+        "price": "Rs 1250,000.00",
+        "quantity": 1
     },
     {
         "name": "black sofa",
@@ -13,14 +13,32 @@
     },
     {
         "name": "red leather sofa",
-        "img": "img/red_sofa.png",
+        "img": "img/sofa.png",
         "price": "Rs 300,000.00",
         "quantity": 5
     },
     {
         "name": "blue fabric sofa",
-        "img": "img/blue_sofa.png",
+        "img": "img/sofa.png",
         "price": "Rs 200,000.00",
         "quantity": 7
+    },
+    {
+        "name": "green velvet sofa",
+        "img": "img/sofa.png",
+        "price": "Rs 350,000.00",
+        "quantity": 3
+    },
+    {
+        "name": "white sectional sofa",
+        "img": "img/sofa.png",
+        "price": "Rs 400,000.00",
+        "quantity": 2
+    },
+    {
+        "name": "brown leather recliner sofa",
+        "img": "img/sofa.png",
+        "price": "Rs 500,000.00",
+        "quantity": 4
     }
 ]
