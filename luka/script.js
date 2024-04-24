@@ -8,7 +8,13 @@ window.onload = function() {
             "price": "Rs 250,000.00",
             "quantity": 1
         },
-        // Add more products as needed
+        {
+            "name": "black sofa",
+            "img": "img/sofa.png",
+            "price": "Rs 150,000.00",
+            "quantity": 2
+        }
+
     ];
 
     var table = document.getElementById('productTable');

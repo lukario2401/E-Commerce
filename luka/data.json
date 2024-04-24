@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Algarotti sofa",
+        "img": "img/sofa.png",
+        "price": "Rs 250,000.00",
+        "quantity": 1
+    },
+    {
+        "name": "black sofa",
+        "img": "img/sofa.png",
+        "price": "Rs 150,000.00",
+        "quantity": 2
+    }
+]
