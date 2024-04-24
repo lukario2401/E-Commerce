@@ -60,3 +60,99 @@ header {
     margin-top: -.5%;
     margin-left: 45%;
 }
+.shopping-cart {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.cart-totals {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 200px;
+}
+.checkout-btn {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    background-color: orange;
+}
+.totals {
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #fff;
+}
+h2 {
+    color: #333333;
+}
+p {
+    margin-bottom: 10px; 
+    font-size: 16px; 
+    color:#666666; 
+}
+button {
+    background-color:orange; 
+    color:white; 
+    padding :14px 20px; 
+    margin :8px 0; 
+    border:none; 
+    cursor:pointer;  
+}   
+button:hover{
+    background-color:#45a049
+}  
+.sofa{
+    width: 20%;
+}
+.carter{
+    display: flex;
+    justify-content: space-around;
+}
+.cart_totals{
+    width: 30%;
+    background-color: orange;
+    padding: 1%;
+    text-align: center;
+}
+.cart_totals button{
+    background-color: orange;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: black;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+.feature {
+    text-align: center;
+}
+.icon {
+    font-size: 50px;
+}
+.title {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.description {
+    color: #666;
+}
